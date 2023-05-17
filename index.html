@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./tip logo.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <main class="container">
+    <!-- input bill -->
+    <div class="input-total">
+      <label for="input-bill-total">
+        Bill Total
+      </label>
+        <input type="number" name='number'id="input-bill-val"  placeholder="0">
+    </div>
+    <!-- input tip -->
+    <div class="input-tip">
+      <label for="input-tip">
+        Tip
+      </label>
+        <input type="number" name='number' id="input-tip-val"  placeholder="0">
+    </div>
+    <!-- Number of People -->
+
+    <div class="flex footer">
+      <div>
+        <p class="labels">People</p>
+        <div class="num-people flex">
+          <small class="increment">+</small>
+          <p id="num-people-val" class="num-people">1</p>
+          <small class="decrement">-</small>
+        </div>
+      </div>
+
+      <div>
+        <p class="labels">Total per Person</p>
+          <p class="total-person-val">$0.00</p>
+      </div>
+    </div>
+   <button type="reset" id="btn-reset" class="btn"> RESET</button>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
